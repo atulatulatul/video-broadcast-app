@@ -14,7 +14,12 @@ const NavDrawer = ({ children }: { children: React.ReactNode }) => {
           <Flex justifyContent="center">
             <Avatar src="https://picsum.photos/seed/picsum/200" size="lg" />
           </Flex>
-          <Box textAlign="center" fontWeight="500" fontSize="20px">
+          <Box
+            textAlign="center"
+            fontWeight="500"
+            fontSize="20px"
+            color="gray.700"
+          >
             John Doe
           </Box>
         </Flex>

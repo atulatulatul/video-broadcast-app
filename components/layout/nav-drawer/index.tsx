@@ -1,6 +1,6 @@
 import { Avatar, Box, Flex } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { MdDashboard } from "react-icons/md";
+import { MdCamera, MdDashboard } from "react-icons/md";
 import NavItem from "./nav-item";
 import NavItemSeparator from "./nav-item-separator";
 
@@ -30,6 +30,14 @@ const NavDrawer = ({ children }: { children: React.ReactNode }) => {
           to="/"
           name="Dashboard"
           isActive={activeRoute === "/"}
+        />
+        <NavItemSeparator />
+        <NavItem
+          mx={1}
+          icon={<MdCamera />}
+          to="/broadcast"
+          name="Video Chat"
+          isActive={activeRoute === "/broadcast"}
         />
         <NavItemSeparator />
       </Box>

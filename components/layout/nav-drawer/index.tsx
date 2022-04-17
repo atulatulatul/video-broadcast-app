@@ -27,7 +27,6 @@ const NavDrawer = ({ children }: { children: React.ReactNode }) => {
           isActive={activeRoute === "/"}
         />
         <NavItemSeparator />
-        <NavItemSeparator />
       </Box>
       <Box p={1} height="100vh" w="100%">
         {children}
